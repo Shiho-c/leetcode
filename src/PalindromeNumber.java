@@ -1,6 +1,5 @@
-public class PalindromeNumber {
-    public static void main(String[] args) throws Exception {
-        int x = 101;
+class Solution {
+    public boolean isPalindrome(int x) {
         String numString = String.valueOf(x);
         String output = "";
         for(int i = numString.length() - 1; i > -1; i --) {
@@ -8,10 +7,8 @@ public class PalindromeNumber {
             output += a;
         }
         if(output.equals(String.valueOf(x))) {
-            System.out.println(true);
-        } else {
-            System.out.println(false);
-        }
-
+            return true;
+        } 
+        return false;
     }
 }
