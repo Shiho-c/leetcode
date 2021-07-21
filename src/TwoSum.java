@@ -14,6 +14,7 @@ public class TwoSum {
             }
             
         }
+        //return output;
         System.out.println(output[0] + "" + output[1]);
     }
 }
